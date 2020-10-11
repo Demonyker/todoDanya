@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    
+    margin: 0;
+}
+
+.container {
+    
+    max-width: 600px;
+    margin: 0;
+    padding: 0 15px;
+}
+
+.block {
+     
+    width: 800px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0,.3);
+    border-radius: 3px;
+    margin-top: 100px;
+    padding: 15px;
+}
+
+.block__form {
+    content: "";
+}
+
+.block__form:after {
+    clear: both;    
+    content: "";
+}
+
+.block__form-input {
+    display: flex;
+    width: 100%;
+    height: 25px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0,.4);
+    text-indent: 10px;
+    font-family: cursive;
+    content: "";
+}
+
+.block__form-button {
+    
+    
+    margin: 10px;
+}
+
+.block__form-button-filter{
+    margin: px;
+}
+
+.block__form-button-add,
+.block__form-button-filter-completed,
+.block__form-button-filter-uncompleted,
+.block__form-button-filter-deletcomplet {
+    
+    width: 160px;
+    line-height: 20px;
+    text-align: left;
+    border: none;
+ /* outline: none; */
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0,.3);
+    background-color: blue;
+    border-radius: 3px;
+    color: white;
+    font-family: cursive;
+    margin: 5px;
+}
+
+.block__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+.block__list-element {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-family: cursive;
+    background-color: transparent;
+}
+
+.block__list-element_deleted {
+    text-decoration: line-through;
+}
+
+.block__list-element_hide {
+    display: none;
+}
+
+.block__list-element:hover > .block__list-delete {
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity .3s ease;
+}
+.block__list-delete {
+    display: flex;
+    justify-content: center;
+    
+    background-color: red;
+    color: white;
+    box-shadow: 0 0 5px 0 rgba (0, 0, 0,.4);
+    cursor: pointer;
+    border-radius: 3px;
+    width: 5%;
+    line-height: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
